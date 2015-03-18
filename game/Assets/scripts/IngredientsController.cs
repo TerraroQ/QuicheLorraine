@@ -4,11 +4,13 @@ using System.Collections;
 public class IngredientsController : MonoBehaviour {
 	public string[] order;
 	private int count;
+	public int errors;
 	
 	// Use this for initialization
 	void Start () {
 		order = new string[8] {"ie_eggs", "ie_milk", "ie_salt", "ie_flour", "ie_bacon", "ie_water", "ie_cheese", "ie_butter"};
 		count = 0;
+		errors = 0;
 	}
 	
 	// Update is called once per frame
@@ -21,6 +23,9 @@ public class IngredientsController : MonoBehaviour {
 		if (other.gameObject.name == order [count]) { 
 			Destroy (other.gameObject);
 			count++;
+		} else {
+			Debug.Log("Fout");
+			errors++;
 		}
 	}
 }
