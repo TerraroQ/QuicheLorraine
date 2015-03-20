@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Res.cs" />
      <Compile Include="Assets\screenRes.cs" />
      <Compile Include="Assets\scripts\DragNDrop.cs" />
      <Compile Include="Assets\scripts\IngredientsController.cs" />
