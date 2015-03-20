@@ -13,7 +13,7 @@ function Update () {
 function OnGUI(){
 	
     if(timeRemaining > 0){
-    	GUI.Label(new Rect(200, 20, 200, 100), "" + Mathf.Round(timeRemaining), style);
+    	GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "" + Mathf.Round(timeRemaining), style);
     }
     else{
         Application.LoadLevel (Application.loadedLevel);
