@@ -25,7 +25,7 @@ public class IngredientsController : MonoBehaviour {
 	}
 
 	void OnGUI () {
-    	GUI.Label(new Rect(250, 20, 200, 100), "Fouten: " + errors, style);
+    	GUI.Label(new Rect(Screen.width * 0.15f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "Fouten: " + errors, style);
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
