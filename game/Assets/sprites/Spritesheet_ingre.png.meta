@@ -2,15 +2,15 @@ fileFormatVersion: 2
 guid: f786a2384552eee4399d2f6b749474d8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Spritesheet_ingre_0
-    21300002: Spritesheet_ingre_1
-    21300004: Spritesheet_ingre_2
-    21300006: Spritesheet_ingre_3
-    21300008: Spritesheet_ingre_4
-    21300010: Spritesheet_ingre_5
-    21300012: Spritesheet_ingre_6
-    21300014: Spritesheet_ingre_7
-    21300016: Spritesheet_ingre_8
+    21300000: ie_water
+    21300002: ie_cheese
+    21300004: ie_bacon
+    21300006: ie_butter
+    21300008: ie_milk
+    21300010: ie_flour
+    21300012: ie_salt
+    21300014: ie_eggs
+    21300016: ie_bowl
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,7 +52,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Spritesheet_ingre_0
+    - name: ie_water
       rect:
         serializedVersion: 2
         x: 0
@@ -60,9 +60,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_1
+    - name: ie_cheese
       rect:
         serializedVersion: 2
         x: 200
@@ -70,9 +70,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_2
+    - name: ie_bacon
       rect:
         serializedVersion: 2
         x: 400
@@ -80,9 +80,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_3
+    - name: ie_butter
       rect:
         serializedVersion: 2
         x: 600
@@ -90,9 +90,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_4
+    - name: ie_milk
       rect:
         serializedVersion: 2
         x: 800
@@ -100,9 +100,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_5
+    - name: ie_flour
       rect:
         serializedVersion: 2
         x: 0
@@ -110,9 +110,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_6
+    - name: ie_salt
       rect:
         serializedVersion: 2
         x: 200
@@ -120,9 +120,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_7
+    - name: ie_eggs
       rect:
         serializedVersion: 2
         x: 400
@@ -130,9 +130,9 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_ingre_8
+    - name: ie_bowl
       rect:
         serializedVersion: 2
         x: 600
@@ -140,7 +140,7 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
