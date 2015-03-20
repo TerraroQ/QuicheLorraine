@@ -11,8 +11,8 @@ public class IngredientsController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		order = new string[8] {"ie_milk", "ie_salt", "ie_eggs", "ie_flour", "ie_bacon", "ie_water", "ie_cheese", "ie_butter"};
-		orderHints = new string[8] {"hud_hints_milk", "hud_hints_salt", "hud_hints_eggs", "hud_hints_flour", "hud_hints_bacon", "hud_hints_water", "hud_hints_cheese", "hud_hints_butter"};
+		order = new string[8] {"ie_milk", "ie_flour", "ie_salt", "ie_eggs", "ie_bacon", "ie_water", "ie_cheese", "ie_butter"};
+		orderHints = new string[8] {"hud_hints_milk", "hud_hints_flour", "hud_hints_salt", "hud_hints_eggs", "hud_hints_bacon", "hud_hints_water", "hud_hints_cheese", "hud_hints_butter"};
 		count = 0;
 		errors = 0;
 		hints = new GameObject();
