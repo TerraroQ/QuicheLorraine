@@ -8,6 +8,7 @@ public class IngredientsController : MonoBehaviour {
 	public int errors;
 	private GameObject hints;
 	private GameObject nextHints;
+	public GUIStyle style;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,10 @@ public class IngredientsController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	void OnGUI () {
+    	GUI.Label(new Rect(350, 70, 200, 100), "Fouten: " + errors, style);
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
