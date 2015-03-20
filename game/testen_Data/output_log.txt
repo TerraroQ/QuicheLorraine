@@ -18,17 +18,9 @@ Platform assembly: C:\Users\Jeroen\Documents\QuicheLorraine\game\testen_Data\Man
 Loading C:\Users\Jeroen\Documents\QuicheLorraine\game\testen_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Jeroen\Documents\QuicheLorraine\game\testen_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Jeroen\Documents\QuicheLorraine\game\testen_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.174 seconds
+- Completed reload, in  0.177 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Jeroen\Documents\QuicheLorraine\game\testen_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jeroen\Documents\QuicheLorraine\game\testen_Data\Managed\System.dll (this message is harmless)
-Fout
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-Fout
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
