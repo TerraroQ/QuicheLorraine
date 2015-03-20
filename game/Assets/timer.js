@@ -1,5 +1,5 @@
 ﻿#pragma strict
-var timeRemaining : float = 5;
+var timeRemaining : float = 120;
 var style : GUIStyle;
 
 function Start(){
@@ -13,7 +13,7 @@ function Update () {
 function OnGUI(){
 	
     if(timeRemaining > 0){
-    	GUI.Label(new Rect(320, 70, 200, 100), "" + Mathf.Round(timeRemaining), style);
+    	GUI.Label(new Rect(280, 80, 200, 100), "" + Mathf.Round(timeRemaining), style);
     }
     else{
         Application.LoadLevel (Application.loadedLevel);
