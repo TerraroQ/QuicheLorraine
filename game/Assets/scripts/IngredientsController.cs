@@ -29,17 +29,21 @@ public class IngredientsController : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
-		hints = GameObject.Find(orderHints [count]);
-		nextHints = GameObject.Find(orderHints [count + 1]);
 		//Debug.Log("Something has entered this zone." + other.gameObject.name);
 		if (other.gameObject.name == order [count]) { 
 			Destroy (other.gameObject);
+			hints = GameObject.Find(orderHints [count]);
 			count++;
-			if (hints != null) {
-				hints.transform.Translate(0,0,10); //naar achteren
-			}
-			if (nextHints != null) {
-			    nextHints.transform.Translate(0,0,-10); //naar voren achteren
+			if (count == 7) {
+				Application.LoadLevel("outro");
+			} else {
+				if (hints != null) {
+					hints.transform.Translate(0,0,10); //naar achteren
+				}
+				nextHints = GameObject.Find(orderHints [count]);
+				if (nextHints != null) {
+				    nextHints.transform.Translate(0,0,-10); //naar voren achteren
+				}
 			}
 		} else {
 			Debug.Log("Fout");
