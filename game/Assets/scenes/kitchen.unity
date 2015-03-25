@@ -672,6 +672,7 @@ GameObject:
   - 61: {fileID: 688819843}
   - 50: {fileID: 688819842}
   - 114: {fileID: 688819841}
+  - 82: {fileID: 688819845}
   m_Layer: 0
   m_Name: ie_bowl
   m_TagString: Untagged
@@ -766,7 +767,10 @@ MonoBehaviour:
     m_StretchHeight: 0
   toggleGUI: 0
   sortingOrderTop: 3
-  timeRemaining: 10
+  timeRemaining: 120
+  audioClip:
+  - {fileID: 8300000, guid: abbba4bfa99246f4ab6806da4290b747, type: 3}
+  - {fileID: 8300000, guid: 3d981cb3d0d00014493bc542e564490d, type: 3}
 --- !u!50 &688819842
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -815,6 +819,64 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300016, guid: f786a2384552eee4399d2f6b749474d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!82 &688819845
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688819839}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &699231903
 GameObject:
   m_ObjectHideFlags: 0
