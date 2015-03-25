@@ -18,13 +18,10 @@ public class IngredientsController : MonoBehaviour {
 	private SpriteRenderer spriteGood;
 	private SpriteRenderer spriteMiddle;
 	private SpriteRenderer spriteBad;
-<<<<<<< HEAD
 	private GameObject endScreen;
 	private GameObject quicheGood;
 	private GameObject quicheMiddle;
 	private GameObject quicheBad;
-=======
->>>>>>> 90bc6759faa5559b066ce61e8c8e41a6a89d8042
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +32,6 @@ public class IngredientsController : MonoBehaviour {
 		hints = new GameObject();
 		franswa = GameObject.Find("scn_franswa_2");
 		toggleGUI = true;
-<<<<<<< HEAD
 		endScreen = GameObject.Find("Eindscherm");
 		quicheGood = GameObject.Find("scn_quiche_good");
 		quicheMiddle = GameObject.Find("scn_quiche_middle");
@@ -49,21 +45,6 @@ public class IngredientsController : MonoBehaviour {
 	}
 	
 	void Update(){
-=======
-	}
-	
-	void Update(){
-		GameObject endScreen = GameObject.Find("Eindscherm");
-		GameObject quicheGood = GameObject.Find("scn_quiche_good");
-		GameObject quicheMiddle = GameObject.Find("scn_quiche_middle");
-		GameObject quicheBad = GameObject.Find("scn_quiche_bad");
-		GameObject Timer = GameObject.Find("hud_timer");
-		timeRemaining -= Time.deltaTime;
-		spriteScreen = endScreen.GetComponent<SpriteRenderer>();
-		spriteGood = quicheGood.GetComponent<SpriteRenderer>();
-		spriteMiddle = quicheMiddle.GetComponent<SpriteRenderer>();
-		spriteBad = quicheBad.GetComponent<SpriteRenderer>();
->>>>>>> 90bc6759faa5559b066ce61e8c8e41a6a89d8042
 		if (count == 8) {
 			spriteScreen.sortingOrder = sortingOrderTop;
 			toggleGUI = false;
@@ -79,7 +60,6 @@ public class IngredientsController : MonoBehaviour {
 	
 	void OnGUI () {
 		style.font = PatrickFont;
-<<<<<<< HEAD
 		GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.08f , Screen.width * 0.4f , Screen.height * 0.2f), "Fouten: " + errors, style);
 		if(toggleGUI == true){
 			GUI.Label(new Rect(Screen.width * 0.15f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "Fouten: " + errors, style);
@@ -91,22 +71,9 @@ public class IngredientsController : MonoBehaviour {
 			else{
 				Application.LoadLevel (Application.loadedLevel);
 			}
-=======
-    	GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.08f , Screen.width * 0.4f , Screen.height * 0.2f), "Fouten: " + errors, style);
-		if(toggleGUI == true){
-    		GUI.Label(new Rect(Screen.width * 0.15f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "Fouten: " + errors, style);
-		}
-		if(toggleGUI == true){
-			if(timeRemaining > 0){
-		    	GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "" + Mathf.Round(timeRemaining), style);
-		    }
-		    else{
-		        Application.LoadLevel (Application.loadedLevel);
-		    }
->>>>>>> 90bc6759faa5559b066ce61e8c8e41a6a89d8042
 		}
 	}
-
+	
 	void OnTriggerEnter2D(Collider2D other) {
 		//Debug.Log("Something has entered this zone." + other.gameObject.name);
 		if (other.gameObject.name == order [count]) { 
