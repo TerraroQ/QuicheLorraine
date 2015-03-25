@@ -4,13 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-<<<<<<< Updated upstream
-    path: Assets/scenes/introduction.unity
-  - enabled: 1
-=======
->>>>>>> Stashed changes
-    path: Assets/scenes/kitchen.unity
-  - enabled: 1
-    path: Assets/scenes/result.unity
+  m_Scenes: []
