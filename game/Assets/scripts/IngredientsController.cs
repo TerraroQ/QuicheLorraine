@@ -8,7 +8,9 @@ public class IngredientsController : MonoBehaviour {
 	public int errors;
 	private GameObject hints;
 	private GameObject nextHints;
+	private GameObject franswa;
 	public GUIStyle style;
+	public Font PatrickFont;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +19,7 @@ public class IngredientsController : MonoBehaviour {
 		count = 0;
 		errors = 0;
 		hints = new GameObject();
+		franswa = GameObject.Find("scn_franswa_2");
 	}
 	
 	// Update is called once per frame
@@ -25,13 +28,15 @@ public class IngredientsController : MonoBehaviour {
 	}
 
 	void OnGUI () {
-    	GUI.Label(new Rect(Screen.width * 0.15f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "Fouten: " + errors, style);
+		style.font = PatrickFont;
+    	GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.08f , Screen.width * 0.4f , Screen.height * 0.2f), "Fouten: " + errors, style);
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
 		//Debug.Log("Something has entered this zone." + other.gameObject.name);
 		if (other.gameObject.name == order [count]) { 
 			Destroy (other.gameObject);
+			franswa.animation.Play("franswa_1");
 			hints = GameObject.Find(orderHints [count]);
 			count++;
 			if (count == 7) {
@@ -42,7 +47,7 @@ public class IngredientsController : MonoBehaviour {
 				}
 				nextHints = GameObject.Find(orderHints [count]);
 				if (nextHints != null) {
-				    nextHints.transform.Translate(0,0,-10); //naar voren achteren
+				    nextHints.transform.Translate(0,0,-10); //naar voren
 				}
 			}
 		} else {
