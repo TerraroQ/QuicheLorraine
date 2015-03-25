@@ -8,7 +8,6 @@ public class IngredientsController : MonoBehaviour {
 	public int errors;
 	private GameObject hints;
 	private GameObject nextHints;
-	private GameObject franswa;
 	public GUIStyle style;
 	public bool toggleGUI;
 	public int sortingOrderTop = 3;
@@ -21,15 +20,20 @@ public class IngredientsController : MonoBehaviour {
 	private GameObject quicheGood;
 	private GameObject quicheMiddle;
 	private GameObject quicheBad;
+	private Animator animator;
+	private GameObject franswa;
 
 	// Use this for initialization
 	void Start () {
+		franswa = GameObject.Find("scn_franswa");
+		animator = franswa.GetComponent<Animator>();
+
 		order = new string[8] {"ie_milk", "ie_flour", "ie_salt", "ie_eggs", "ie_bacon", "ie_water", "ie_cheese", "ie_butter"};
 		orderHints = new string[8] {"hud_hints_milk", "hud_hints_flour", "hud_hints_salt", "hud_hints_eggs", "hud_hints_bacon", "hud_hints_water", "hud_hints_cheese", "hud_hints_butter"};
 		count = 0;
 		errors = 0;
 		hints = new GameObject();
-		franswa = GameObject.Find("scn_franswa_2");
+
 		toggleGUI = true;
 		endScreen = GameObject.Find("Eindscherm");
 		quicheGood = GameObject.Find("scn_quiche_good");
@@ -76,7 +80,8 @@ public class IngredientsController : MonoBehaviour {
 		//Debug.Log("Something has entered this zone." + other.gameObject.name);
 		if (other.gameObject.name == order [count]) { 
 			Destroy (other.gameObject);
-			franswa.animation.Play("franswa_1");
+			//franswa.animation.Play("franswa_fout");
+			animator.SetTrigger("goedAntwoord");
 			hints = GameObject.Find(orderHints [count]);
 			if (count == 7) {
 				//Application.LoadLevel("result");
@@ -92,7 +97,8 @@ public class IngredientsController : MonoBehaviour {
 				}
 			}
 		} else {
-			Debug.Log("Fout");
+			animator.SetTrigger("foutAntwoord");
+			//Debug.Log("Fout");
 			errors++;
 		}
 	}

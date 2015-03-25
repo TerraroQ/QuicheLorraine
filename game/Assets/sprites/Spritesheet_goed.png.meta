@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: 5d05e325db7af6f4db52c3ae61f4a02e
+guid: 7991be9e10a15564a8fcf7dc02686608
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Spritesheet_fout_0
-    21300002: Spritesheet_fout_1
-    21300004: Spritesheet_fout_2
-    21300006: Spritesheet_fout_3
-    21300008: Spritesheet_fout_4
-    21300010: Spritesheet_fout_5
-    21300012: Spritesheet_fout_6
+    21300000: Spritesheet_goed_0
+    21300002: Spritesheet_goed_1
+    21300004: Spritesheet_goed_2
+    21300006: Spritesheet_goed_3
+    21300008: Spritesheet_goed_4
+    21300010: Spritesheet_goed_5
+    21300012: Spritesheet_goed_6
+    21300014: Spritesheet_goed_7
+    21300016: Spritesheet_goed_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,72 +52,92 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Spritesheet_fout_0
+    - name: Spritesheet_goed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 327
+        width: 325
         height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_fout_1
+    - name: Spritesheet_goed_1
       rect:
         serializedVersion: 2
-        x: 327
+        x: 325
         y: 0
-        width: 327
+        width: 325
         height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_fout_2
+    - name: Spritesheet_goed_2
       rect:
         serializedVersion: 2
-        x: 654
+        x: 650
         y: 0
-        width: 327
+        width: 325
         height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_fout_3
+    - name: Spritesheet_goed_3
       rect:
         serializedVersion: 2
-        x: 981
+        x: 975
         y: 0
-        width: 327
+        width: 325
         height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_fout_4
+    - name: Spritesheet_goed_4
       rect:
         serializedVersion: 2
-        x: 1308
+        x: 1300
         y: 0
-        width: 327
+        width: 325
         height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_fout_5
+    - name: Spritesheet_goed_5
       rect:
         serializedVersion: 2
-        x: 1635
+        x: 1625
         y: 0
-        width: 327
+        width: 325
         height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spritesheet_fout_6
+    - name: Spritesheet_goed_6
       rect:
         serializedVersion: 2
-        x: 1962
+        x: 1950
         y: 0
-        width: 327
+        width: 325
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spritesheet_goed_7
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 0
+        width: 325
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spritesheet_goed_8
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 325
         height: 650
       alignment: 0
       pivot: {x: 0, y: 0}

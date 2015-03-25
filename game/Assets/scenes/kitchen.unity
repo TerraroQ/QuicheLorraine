@@ -570,8 +570,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.39999998
-  m_Text: "Beurre\r (250gr)\nFarine\r (250gr)\nOeufs (5)\nSel\r\nL'Eau\nJambon\r (200gr)\nLait\r
-    (150ml)\nFromage\r (120gr)"
+  m_Text: "Lait\r (150ml)\nFarine\r (250gr)\nSel\r\nOeufs (5)\nJambon\r (200gr)\nL'Eau\nFromage\r
+    (120gr)\nBeurre\r (250gr)"
 --- !u!222 &319680756
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -764,7 +764,6 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
-  PatrickFont: {fileID: 0}
   toggleGUI: 0
   sortingOrderTop: 3
   timeRemaining: 10
@@ -2198,6 +2197,7 @@ GameObject:
   - 4: {fileID: 2005383104}
   - 212: {fileID: 2005383105}
   - 95: {fileID: 2005383106}
+  - 111: {fileID: 2005383107}
   m_Layer: 0
   m_Name: scn_franswa
   m_TagString: Untagged
@@ -2254,6 +2254,21 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &2005383107
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005383103}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e2d4d118821ae7843964d137d3ac28fe, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e2d4d118821ae7843964d137d3ac28fe, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2037257333
 GameObject:
   m_ObjectHideFlags: 0
