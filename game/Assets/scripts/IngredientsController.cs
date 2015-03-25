@@ -22,6 +22,7 @@ public class IngredientsController : MonoBehaviour {
 	private GameObject quicheBad;
 	private Animator animator;
 	private GameObject franswa;
+	public AudioClip[] audioClip;
 
 	// Use this for initialization
 	void Start () {
@@ -61,6 +62,11 @@ public class IngredientsController : MonoBehaviour {
 			}
 		}
 	}
+
+	void PlaySound(int clip){
+		audio.clip = audioClip[clip];
+		audio.Play();
+	}
 	
 	void OnGUI () {
 		if(toggleGUI == true){
@@ -83,6 +89,7 @@ public class IngredientsController : MonoBehaviour {
 			//franswa.animation.Play("franswa_fout");
 			animator.SetTrigger("goedAntwoord");
 			hints = GameObject.Find(orderHints [count]);
+			PlaySound(0);
 			if (count == 7) {
 				//Application.LoadLevel("result");
 				count++;
@@ -98,6 +105,7 @@ public class IngredientsController : MonoBehaviour {
 			}
 		} else {
 			animator.SetTrigger("foutAntwoord");
+			PlaySound(1);
 			//Debug.Log("Fout");
 			errors++;
 		}
