@@ -10,10 +10,9 @@ public class IngredientsController : MonoBehaviour {
 	private GameObject nextHints;
 	private GameObject franswa;
 	public GUIStyle style;
-	public Font PatrickFont;
 	public bool toggleGUI;
 	public int sortingOrderTop = 3;
-	public float timeRemaining = 10;
+	public float timeRemaining = 120;
 	private SpriteRenderer spriteScreen;
 	private SpriteRenderer spriteGood;
 	private SpriteRenderer spriteMiddle;
@@ -45,6 +44,7 @@ public class IngredientsController : MonoBehaviour {
 	}
 	
 	void Update(){
+		timeRemaining -= Time.deltaTime;
 		if (count == 8) {
 			spriteScreen.sortingOrder = sortingOrderTop;
 			toggleGUI = false;
@@ -59,8 +59,6 @@ public class IngredientsController : MonoBehaviour {
 	}
 	
 	void OnGUI () {
-		style.font = PatrickFont;
-		GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.08f , Screen.width * 0.4f , Screen.height * 0.2f), "Fouten: " + errors, style);
 		if(toggleGUI == true){
 			GUI.Label(new Rect(Screen.width * 0.15f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "Fouten: " + errors, style);
 		}
