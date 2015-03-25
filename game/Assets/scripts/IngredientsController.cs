@@ -11,6 +11,17 @@ public class IngredientsController : MonoBehaviour {
 	private GameObject franswa;
 	public GUIStyle style;
 	public Font PatrickFont;
+	public bool toggleGUI;
+	public int sortingOrderTop = 3;
+	public float timeRemaining = 10;
+	private SpriteRenderer spriteScreen;
+	private SpriteRenderer spriteGood;
+	private SpriteRenderer spriteMiddle;
+	private SpriteRenderer spriteBad;
+	private GameObject endScreen;
+	private GameObject quicheGood;
+	private GameObject quicheMiddle;
+	private GameObject quicheBad;
 
 	// Use this for initialization
 	void Start () {
@@ -20,16 +31,47 @@ public class IngredientsController : MonoBehaviour {
 		errors = 0;
 		hints = new GameObject();
 		franswa = GameObject.Find("scn_franswa_2");
+		toggleGUI = true;
+		endScreen = GameObject.Find("Eindscherm");
+		quicheGood = GameObject.Find("scn_quiche_good");
+		quicheMiddle = GameObject.Find("scn_quiche_middle");
+		quicheBad = GameObject.Find("scn_quiche_bad");
+		//GameObject Timer = GameObject.Find("hud_timer");
+		timeRemaining -= Time.deltaTime;
+		spriteScreen = endScreen.GetComponent<SpriteRenderer>();
+		spriteGood = quicheGood.GetComponent<SpriteRenderer>();
+		spriteMiddle = quicheMiddle.GetComponent<SpriteRenderer>();
+		spriteBad = quicheBad.GetComponent<SpriteRenderer>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void Update(){
+		if (count == 8) {
+			spriteScreen.sortingOrder = sortingOrderTop;
+			toggleGUI = false;
+			if (errors < 3){
+				spriteGood.sortingOrder = 5;
+			}else if(errors < 5 && errors > 3){
+				spriteMiddle.sortingOrder = 5;
+			}else{
+				spriteBad.sortingOrder = 5;
+			}
+		}
 	}
-
+	
 	void OnGUI () {
 		style.font = PatrickFont;
-    	GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.08f , Screen.width * 0.4f , Screen.height * 0.2f), "Fouten: " + errors, style);
+		GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.08f , Screen.width * 0.4f , Screen.height * 0.2f), "Fouten: " + errors, style);
+		if(toggleGUI == true){
+			GUI.Label(new Rect(Screen.width * 0.15f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "Fouten: " + errors, style);
+		}
+		if(toggleGUI == true){
+			if(timeRemaining > 0){
+				GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "" + Mathf.Round(timeRemaining), style);
+			}
+			else{
+				Application.LoadLevel (Application.loadedLevel);
+			}
+		}
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
@@ -38,16 +80,17 @@ public class IngredientsController : MonoBehaviour {
 			Destroy (other.gameObject);
 			franswa.animation.Play("franswa_1");
 			hints = GameObject.Find(orderHints [count]);
-			count++;
 			if (count == 7) {
-				Application.LoadLevel("outro");
+				//Application.LoadLevel("result");
+				count++;
 			} else {
+				count++;
 				if (hints != null) {
 					hints.transform.Translate(0,0,10); //naar achteren
 				}
 				nextHints = GameObject.Find(orderHints [count]);
 				if (nextHints != null) {
-				    nextHints.transform.Translate(0,0,-10); //naar voren
+					nextHints.transform.Translate(0,0,-10); //naar voren
 				}
 			}
 		} else {
