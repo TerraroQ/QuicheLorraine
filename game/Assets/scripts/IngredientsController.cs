@@ -10,9 +10,7 @@ public class IngredientsController : MonoBehaviour {
 	private GameObject nextHints;
 	private GameObject franswa;
 	public GUIStyle style;
-<<<<<<< Updated upstream
 	public Font PatrickFont;
-=======
 	public bool toggleGUI;
 	public int sortingOrderTop = 3;
 	public float timeRemaining = 10;
@@ -20,7 +18,6 @@ public class IngredientsController : MonoBehaviour {
 	private SpriteRenderer spriteGood;
 	private SpriteRenderer spriteMiddle;
 	private SpriteRenderer spriteBad;
->>>>>>> Stashed changes
 
 	// Use this for initialization
 	void Start () {
@@ -29,11 +26,8 @@ public class IngredientsController : MonoBehaviour {
 		count = 0;
 		errors = 0;
 		hints = new GameObject();
-<<<<<<< Updated upstream
 		franswa = GameObject.Find("scn_franswa_2");
-=======
 		toggleGUI = true;
->>>>>>> Stashed changes
 	}
 	
 	void Update(){
@@ -61,10 +55,8 @@ public class IngredientsController : MonoBehaviour {
 	}
 
 	void OnGUI () {
-<<<<<<< Updated upstream
 		style.font = PatrickFont;
     	GUI.Label(new Rect(Screen.width * 0.05f , Screen.height * 0.08f , Screen.width * 0.4f , Screen.height * 0.2f), "Fouten: " + errors, style);
-=======
 		if(toggleGUI == true){
     		GUI.Label(new Rect(Screen.width * 0.15f , Screen.height * 0.02f , Screen.width * 0.4f , Screen.height * 0.25f), "Fouten: " + errors, style);
 		}
@@ -76,7 +68,6 @@ public class IngredientsController : MonoBehaviour {
 		        Application.LoadLevel (Application.loadedLevel);
 		    }
 		}
->>>>>>> Stashed changes
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
