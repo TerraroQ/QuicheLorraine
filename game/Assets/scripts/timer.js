@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿#pragma strict
 var timeRemaining : float = 120;
 var style : GUIStyle;
@@ -21,3 +22,6 @@ function OnGUI(){
         Application.LoadLevel (Application.loadedLevel);
     }
 }
+=======
+﻿
+>>>>>>> Stashed changes
