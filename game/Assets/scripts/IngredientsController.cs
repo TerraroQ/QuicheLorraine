@@ -16,10 +16,6 @@ public class IngredientsController : MonoBehaviour {
 	private SpriteRenderer spriteGood;
 	private SpriteRenderer spriteMiddle;
 	private SpriteRenderer spriteBad;
-	private GameObject endScreen;
-	private GameObject quicheGood;
-	private GameObject quicheMiddle;
-	private GameObject quicheBad;
 	private SpriteRenderer textGood;
 	private SpriteRenderer textMiddle;
 	private SpriteRenderer textBad;
@@ -39,19 +35,15 @@ public class IngredientsController : MonoBehaviour {
 		hints = new GameObject();
 
 		toggleGUI = true;
-		endScreen = GameObject.Find("Eindscherm");
-		quicheGood = GameObject.Find("scn_quiche_good");
-		quicheMiddle = GameObject.Find("scn_quiche_middle");
-		quicheBad = GameObject.Find("scn_quiche_bad");
+
 		textGood = GameObject.Find("hud_text_prachtig").GetComponent<SpriteRenderer>();
 		textMiddle = GameObject.Find("hud_text_mooi").GetComponent<SpriteRenderer>();
 		textBad = GameObject.Find("hud_text_oops").GetComponent<SpriteRenderer>();
-		//GameObject Timer = GameObject.Find("hud_timer");
 		timeRemaining -= Time.deltaTime;
-		spriteScreen = endScreen.GetComponent<SpriteRenderer>();
-		spriteGood = quicheGood.GetComponent<SpriteRenderer>();
-		spriteMiddle = quicheMiddle.GetComponent<SpriteRenderer>();
-		spriteBad = quicheBad.GetComponent<SpriteRenderer>();
+		spriteScreen = GameObject.Find("Eindscherm").GetComponent<SpriteRenderer>();
+		spriteGood = GameObject.Find("scn_quiche_good").GetComponent<SpriteRenderer>();
+		spriteMiddle = GameObject.Find("scn_quiche_middle").GetComponent<SpriteRenderer>();
+		spriteBad = GameObject.Find("scn_quiche_bad").GetComponent<SpriteRenderer>();
 	}
 	
 	void Update(){
@@ -62,10 +54,10 @@ public class IngredientsController : MonoBehaviour {
 			if (errors < 3){
 				spriteGood.sortingOrder = 5;
 				textGood.sortingOrder = 4;
-			}else if(errors < 5 && errors > 3){
+			} else if(errors < 5 && errors > 3){
 				spriteMiddle.sortingOrder = 5;
 				textMiddle.sortingOrder = 4;
-			}else{
+			} else {
 				spriteBad.sortingOrder = 5;
 				textBad.sortingOrder = 4;
 			}

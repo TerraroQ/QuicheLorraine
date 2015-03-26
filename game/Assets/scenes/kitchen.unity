@@ -270,7 +270,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1382150511}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &231081412
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 8300000, guid: 3d981cb3d0d00014493bc542e564490d, type: 3}
+  - {fileID: 8300000, guid: 19a66e44ed1586a46bda930c106f37f3, type: 3}
 --- !u!212 &231081417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -739,88 +739,6 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 3927891f7d2c5a64c904b27ca96df536, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &462266840
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 462266841}
-  - 212: {fileID: 462266843}
-  - 95: {fileID: 462266842}
-  - 111: {fileID: 462266844}
-  m_Layer: 0
-  m_Name: scn_franswa_oud
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &462266841
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462266840}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.01000023, y: 1.49000001, z: 2}
-  m_LocalScale: {x: .899999976, y: .899999976, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1382150511}
-  m_RootOrder: 3
---- !u!95 &462266842
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462266840}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0ec684234ff834943abf834c93b58936, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!212 &462266843
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462266840}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2b789061496bc704e802541f533c04ed, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!111 &462266844
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 462266840}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e3e804911d165e342ace41b930df0467, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e3e804911d165e342ace41b930df0467, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &688819839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,7 +1250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 7ccc6a809b2ba25449464fbe49ba79be, type: 3}
 --- !u!50 &938227750
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1471,7 +1389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 92fc8e97fe0930a40bbca24f3d8fa937, type: 3}
 --- !u!50 &1156726171
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1818,7 +1736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 4e6d2053041591440b3fbd395eed2370, type: 3}
 --- !u!50 &1284943998
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1969,7 +1887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 41fff9062b561844a9dc6d690dc16627, type: 3}
 --- !u!50 &1325521218
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2104,7 +2022,6 @@ Transform:
   - {fileID: 1244756410}
   - {fileID: 1677837318}
   - {fileID: 153369877}
-  - {fileID: 462266841}
   - {fileID: 229188661}
   - {fileID: 1390741741}
   - {fileID: 1731346030}
@@ -2161,7 +2078,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1382150511}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &1649833708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,7 +2163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1d8d9ba569affe64580a999ce215c42a, type: 3}
 --- !u!50 &1655168798
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2402,7 +2319,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1382150511}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &1677837316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2406,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 323a6cf7fafae5e47884dff15755aa9c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d9be661e39d82f4c8be29edc80113cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1731346030
 Transform:
@@ -2502,7 +2419,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1382150511}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &1737623352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,7 +2550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: f646ce475e9825a4aa0d897c2d6bbe9d, type: 3}
 --- !u!50 &1963972291
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2784,7 +2701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 16bf998e5ed5ae04e8974de71f788d1b, type: 3}
 --- !u!50 &1986385859
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2920,7 +2837,7 @@ Transform:
   m_LocalScale: {x: .899999976, y: .899999976, z: 1}
   m_Children: []
   m_Father: {fileID: 1382150511}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!212 &2005383105
 SpriteRenderer:
   m_ObjectHideFlags: 0
