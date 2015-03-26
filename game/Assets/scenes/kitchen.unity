@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 8300000, guid: 3d981cb3d0d00014493bc542e564490d, type: 3}
+  - {fileID: 8300000, guid: 19a66e44ed1586a46bda930c106f37f3, type: 3}
 --- !u!212 &231081417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 7ccc6a809b2ba25449464fbe49ba79be, type: 3}
 --- !u!50 &938227750
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1321,7 +1321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 92fc8e97fe0930a40bbca24f3d8fa937, type: 3}
 --- !u!50 &1156726171
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 4e6d2053041591440b3fbd395eed2370, type: 3}
 --- !u!50 &1284943998
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1819,7 +1819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 41fff9062b561844a9dc6d690dc16627, type: 3}
 --- !u!50 &1325521218
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1d8d9ba569affe64580a999ce215c42a, type: 3}
 --- !u!50 &1655168798
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2479,7 +2479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: f646ce475e9825a4aa0d897c2d6bbe9d, type: 3}
 --- !u!50 &1963972291
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2630,7 +2630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 16bf998e5ed5ae04e8974de71f788d1b, type: 3}
 --- !u!50 &1986385859
 Rigidbody2D:
   m_ObjectHideFlags: 0
