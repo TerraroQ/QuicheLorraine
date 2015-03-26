@@ -20,6 +20,9 @@ public class IngredientsController : MonoBehaviour {
 	private GameObject quicheGood;
 	private GameObject quicheMiddle;
 	private GameObject quicheBad;
+	private SpriteRenderer textGood;
+	private SpriteRenderer textMiddle;
+	private SpriteRenderer textBad;
 	private Animator animator;
 	private GameObject franswa;
 	public AudioClip[] audioClip;
@@ -40,6 +43,9 @@ public class IngredientsController : MonoBehaviour {
 		quicheGood = GameObject.Find("scn_quiche_good");
 		quicheMiddle = GameObject.Find("scn_quiche_middle");
 		quicheBad = GameObject.Find("scn_quiche_bad");
+		textGood = GameObject.Find("hud_text_prachtig").GetComponent<SpriteRenderer>();
+		textMiddle = GameObject.Find("hud_text_mooi").GetComponent<SpriteRenderer>();
+		textBad = GameObject.Find("hud_text_oops").GetComponent<SpriteRenderer>();
 		//GameObject Timer = GameObject.Find("hud_timer");
 		timeRemaining -= Time.deltaTime;
 		spriteScreen = endScreen.GetComponent<SpriteRenderer>();
@@ -55,10 +61,13 @@ public class IngredientsController : MonoBehaviour {
 			toggleGUI = false;
 			if (errors < 3){
 				spriteGood.sortingOrder = 5;
+				textGood.sortingOrder = 4;
 			}else if(errors < 5 && errors > 3){
 				spriteMiddle.sortingOrder = 5;
+				textMiddle.sortingOrder = 4;
 			}else{
 				spriteBad.sortingOrder = 5;
+				textBad.sortingOrder = 4;
 			}
 		}
 	}
