@@ -54,7 +54,7 @@ public class IngredientsController : MonoBehaviour {
 			if (errors < 3){
 				spriteGood.sortingOrder = 5;
 				textGood.sortingOrder = 4;
-			} else if(errors < 5 && errors > 3){
+			} else if(errors < 5 && errors > 2){
 				spriteMiddle.sortingOrder = 5;
 				textMiddle.sortingOrder = 4;
 			} else {
